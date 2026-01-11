@@ -16,11 +16,18 @@ def solve_tets(ege_num: int):
 
 
 if __name__ == "__main__":
-    EGE_TASK_NUM = 9
-    AMOUNT_OF_CIRCLES = 70
-    for _ in range(AMOUNT_OF_CIRCLES):
-        solve_tets(EGE_TASK_NUM)
-        time.sleep(5)
+    TASK_NUMS_TO_SOLVE = {9: 100, 10: 100, 11: 100, 13: 100, 14: 100, 15: 100, 23: 90, 24: 90, 25: 90, 26: 90, 1: 85, 2: 85, 3: 85}
+    # EGE_TASK_NUM = 9
+    for ege_task_num, amount_of_circles in TASK_NUMS_TO_SOLVE.items():
+        for i in range(amount_of_circles):
+            print(f'Запуск ЕГЭ №{ege_task_num}, круг {i + 1}/{amount_of_circles}')
+            solve_tets(ege_task_num)
+            time.sleep(6)
+        print(f'Завершено ЕГЭ №{ege_task_num} в количестве {amount_of_circles} кругов')
+    # AMOUNT_OF_CIRCLES = 70
+    # for _ in range(AMOUNT_OF_CIRCLES):
+    #     solve_tets(EGE_TASK_NUM)
+    #     time.sleep(5)
     # for i in range(40):
     #     solve_tets()
     #     time.sleep(5)
