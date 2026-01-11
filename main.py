@@ -24,6 +24,7 @@ if __name__ == "__main__":
             solve_tets(ege_task_num)
             time.sleep(6)
         print(f'Завершено ЕГЭ №{ege_task_num} в количестве {amount_of_circles} кругов')
+        time.sleep(35)
     # AMOUNT_OF_CIRCLES = 70
     # for _ in range(AMOUNT_OF_CIRCLES):
     #     solve_tets(EGE_TASK_NUM)
