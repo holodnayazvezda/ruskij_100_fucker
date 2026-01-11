@@ -21,7 +21,7 @@ def get_headers():
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
-        "Cookie": ANSWERS_GETTER_COOKIE[amount_of_requests % len(ANSWERS_GETTER_COOKIE)]
+        "Cookie": ANSWERS_GETTER_COOKIE[amount_of_requests % 3]
     }
     return HEADERS
 

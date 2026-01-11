@@ -1,6 +1,6 @@
 import time
 
-from config import ege_test_url
+from config import ege_test_url, get_headers
 from core.utils import get_test_info, parse_test_hrml
 from core.test_workers import get_answers_on_test
 from tasks_json_parsers.classificator import classify_task
@@ -8,17 +8,16 @@ from utils.printer import print_to_file
 
 
 def solve_tets(ege_num: int):
+    headers = get_headers()
     test_link_on_any_10 = ege_test_url.format(ege_num)
     task_type = classify_task(ege_num)
-    test_html = get_test_info(test_link_on_any_10)
+    test_html = get_test_info(test_link_on_any_10, headers)
     test_id, answer_nums = parse_test_hrml(test_html)
     get_answers_on_test(ege_num, task_type, test_id, answer_nums)
     # solve_test_using_stored_answers(test_id, answer_nums)
 
-print
-
 if __name__ == "__main__":
-    TASK_NUMS_TO_SOLVE = {9: 100, 10: 100, 11: 100, 13: 100, 14: 100, 15: 100, 23: 90, 24: 90, 25: 90, 26: 90, 1: 85, 2: 85, 3: 85}
+    TASK_NUMS_TO_SOLVE = {10: 100, 11: 100, 13: 100, 14: 100, 15: 100, 23: 90, 24: 90, 25: 90, 26: 90, 1: 85, 2: 85, 3: 85}
     # EGE_TASK_NUM = 9
     for ege_task_num, amount_of_circles in TASK_NUMS_TO_SOLVE.items():
         for i in range(amount_of_circles):

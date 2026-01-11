@@ -3,13 +3,11 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from config import get_headers
 
-
-def get_test_info(test_url: str):
+def get_test_info(test_url: str, headers: dict):
     r = requests.get(
         url=test_url,
-        headers=get_headers()
+        headers=headers
     )
     if r.status_code != 200:
         raise Exception(f"Не удалось получить информацию по тесту, status code: {r.status_code}")
