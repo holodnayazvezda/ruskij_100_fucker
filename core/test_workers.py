@@ -7,6 +7,7 @@ import requests
 from config import test_delete_url, test_task_submit_url, get_headers
 from tasks_json_parsers.task12 import get_json_payload_for_task_where_point_ans_needed, \
     get_json_payload_for_task_where_nothing_needed
+from utils.printer import print_to_file
 
 
 def delete_info_about_test(test_id: int):
@@ -16,7 +17,7 @@ def delete_info_about_test(test_id: int):
         headers=get_headers()
     )
     if r.status_code != 200:
-        print(f"Не удалось удалить test id = {test_id}")
+        print_to_file(f"Не удалось удалить test id = {test_id}")
 
 
 def get_answers_on_test(ege_num: int, task_type: str, test_id: int, question_ids: list[int]):
@@ -60,7 +61,7 @@ def get_answers_on_test(ege_num: int, task_type: str, test_id: int, question_ids
             correct_answer = response_json['answers'][0]["correctAnswer"].replace(' ', '')
             answers[q_id] = correct_answer
     delete_info_about_test(test_id)
-    print("Парсинг завершен! Текущее количество ответов:", len(answers))
+    print_to_file("    Парсинг завершен! Текущее количество ответов:", len(answers))
     f = open(filename, 'w', encoding='utf-8')
     f.write(json.dumps(answers, ensure_ascii=False))
     f.close()

@@ -4,6 +4,7 @@ from config import ege_test_url
 from core.utils import get_test_info, parse_test_hrml
 from core.test_workers import get_answers_on_test
 from tasks_json_parsers.classificator import classify_task
+from utils.printer import print_to_file
 
 
 def solve_tets(ege_num: int):
@@ -14,16 +15,17 @@ def solve_tets(ege_num: int):
     get_answers_on_test(ege_num, task_type, test_id, answer_nums)
     # solve_test_using_stored_answers(test_id, answer_nums)
 
+print
 
 if __name__ == "__main__":
     TASK_NUMS_TO_SOLVE = {9: 100, 10: 100, 11: 100, 13: 100, 14: 100, 15: 100, 23: 90, 24: 90, 25: 90, 26: 90, 1: 85, 2: 85, 3: 85}
     # EGE_TASK_NUM = 9
     for ege_task_num, amount_of_circles in TASK_NUMS_TO_SOLVE.items():
         for i in range(amount_of_circles):
-            print(f'Запуск ЕГЭ №{ege_task_num}, круг {i + 1}/{amount_of_circles}')
+            print_to_file(f'Запуск ЕГЭ №{ege_task_num}, круг {i + 1}/{amount_of_circles}')
             solve_tets(ege_task_num)
             time.sleep(6)
-        print(f'Завершено ЕГЭ №{ege_task_num} в количестве {amount_of_circles} кругов')
+        print_to_file(f'Завершено ЕГЭ №{ege_task_num} в количестве {amount_of_circles} кругов')
         time.sleep(35)
     # AMOUNT_OF_CIRCLES = 70
     # for _ in range(AMOUNT_OF_CIRCLES):
