@@ -11,7 +11,7 @@ def get_headers():
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
-        "Cookie": "russkij100_uid=AZuu9xKxcXScSvUddAGwHA.Ih0u5yx1CiNZogkn5nn9APzaBw4N0hd6Zc-JwbAFfSo"
+        "Cookie": DANIIL_COOKIE
     }
     return HEADERS
 
@@ -19,3 +19,6 @@ def get_headers():
 ege_test_url = "https://test.russkij100.ru/workout/{}?size=10"
 test_task_submit_url = "https://test.russkij100.ru/api2/addTestAnswer?id={}&n=1"
 test_delete_url = "https://test.russkij100.ru/api3/testResult?id={}"
+
+SOLVER = 1
+GETTER = 2
