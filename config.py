@@ -1,6 +1,6 @@
 DANIIL_COOKIE = "russkij100_uid=AZuoYEypc8erQbMOYwPKzA.D4Q1QGV0Hws8-IOx0CqE0_HiFKkpoamaG39QnlXfEcI"
 
-ANSWERS_GETTER_COOKIE = "russkij100_uid=AZupF8xye6u89X3C_P0SXQ.4C3eL5E05OE3VWy8ORrHZm5r35kf4nLEI-Ey7IWf-tA"
+ANSWERS_GETTER_COOKIE = "russkij100_uid=AZuqzITwdlqpSkyEtkyB-A.uSU2XXBDSuUpZGelBTGkoJFdntGBkkK_aUWEpn0VIuw"
 
 HEADERS = {
     "Cache-Control": "no-cache",
@@ -10,6 +10,9 @@ HEADERS = {
     "Accept": "*/*",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
-    "Cookie": DANIIL_COOKIE
+    "Cookie": ANSWERS_GETTER_COOKIE
 }
 
+ege_test_url = "https://test.russkij100.ru/workout/{}?size=10"
+test_task_submit_url = "https://test.russkij100.ru/api2/addTestAnswer?id={}&n=1"
+test_delete_url = "https://test.russkij100.ru/api3/testResult?id={}"
