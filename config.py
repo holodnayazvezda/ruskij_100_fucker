@@ -11,7 +11,7 @@ def get_headers():
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
-        "Cookie": 'russkij100_uid=AZutBEM6f2SrQgsccNlnTQ.qa-GoAeKCOo-gtfkliQ0z_fjaoHpaySkj1hUM3Jzgys'
+        "Cookie": 'russkij100_uid=AZutE52XfI6gqsv5rEDPgw.wRj5RL69kkiOTZQNQXYHpAU6BmP4NVyN7YLuIbSFnrc'
     }
     return HEADERS
 
