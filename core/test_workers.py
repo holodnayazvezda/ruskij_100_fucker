@@ -5,8 +5,8 @@ from random import randint
 import requests
 
 from config import test_delete_url, test_task_submit_url
-from tasks_json_parsers.task12 import get_json_payload_for_task_where_point_ans_needed, \
-    get_json_payload_for_task_where_nothing_needed
+from tasks_json_parsers.payloads_worker import get_json_payload_for_task_where_point_ans_needed, \
+    get_json_payload_for_task_where_nothing_needed, get_json_payload_for_task_where_point_ans_and_extra_ans_needed
 from utils.printer import print_to_file
 
 
@@ -47,7 +47,12 @@ def get_answers_on_test(ege_num: int, task_type: str, test_id: int, question_ids
                 "12"
             )
         else:
-            raise Exception("Непредсказуемый тип задания")
+            requests_payload_text = get_json_payload_for_task_where_point_ans_and_extra_ans_needed(
+                start_timestamp, end_timestamp,
+                test_id,
+                i, "2865",
+                "12"
+            )
 
         if i != 10:
             r = requests.post(

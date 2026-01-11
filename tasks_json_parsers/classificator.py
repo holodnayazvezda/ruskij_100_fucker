@@ -4,4 +4,4 @@ def classify_task(task_num: int) -> str:
     elif task_num in [9, 10, 11, 12, 13, 14, 15]:
         return "point_ans_needed"
     else:
-        raise Exception(f"Задание ЕГЭ №{task_num} пока не поддерживается :(")
+        return "point_ans_and_extra_ans_needed"
