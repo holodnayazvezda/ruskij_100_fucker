@@ -61,3 +61,78 @@
 2026-01-11 15:13:36,857 DEBUG Starting new HTTP connection (1): test.russkij100.ru:80
 2026-01-11 15:13:36,954 DEBUG http://test.russkij100.ru:80 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 301 162
 2026-01-11 15:13:37,382 DEBUG https://test.russkij100.ru:443 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 200 None
+2026-01-11 15:19:22,716 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:19:36,536 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:19:36,870 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 302 0
+2026-01-11 15:19:36,874 DEBUG Starting new HTTP connection (1): test.russkij100.ru:80
+2026-01-11 15:19:36,988 DEBUG http://test.russkij100.ru:80 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 301 162
+2026-01-11 15:19:37,060 DEBUG https://test.russkij100.ru:443 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 200 None
+2026-01-11 15:20:16,252 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:20:17,760 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:20:18,035 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 302 0
+2026-01-11 15:20:18,041 DEBUG Starting new HTTP connection (1): test.russkij100.ru:80
+2026-01-11 15:20:18,206 DEBUG http://test.russkij100.ru:80 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 301 162
+2026-01-11 15:20:18,322 DEBUG https://test.russkij100.ru:443 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 200 None
+2026-01-11 15:20:38,352 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:20:38,355 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:20:38,673 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 200 None
+2026-01-11 15:21:39,825 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:21:46,634 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:21:46,873 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 302 0
+2026-01-11 15:21:46,879 DEBUG Starting new HTTP connection (1): test.russkij100.ru:80
+2026-01-11 15:21:46,979 DEBUG http://test.russkij100.ru:80 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 301 162
+2026-01-11 15:21:47,044 DEBUG https://test.russkij100.ru:443 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 200 None
+2026-01-11 15:22:13,745 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:22:15,359 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:15,638 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 302 0
+2026-01-11 15:22:15,643 DEBUG Starting new HTTP connection (1): test.russkij100.ru:80
+2026-01-11 15:22:15,806 DEBUG http://test.russkij100.ru:80 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 301 162
+2026-01-11 15:22:15,875 DEBUG https://test.russkij100.ru:443 "GET /auth?r=%2Fworkout%2F10%3Fsize%3D10 HTTP/1.1" 200 None
+2026-01-11 15:22:39,083 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:22:41,444 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:41,803 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 200 None
+2026-01-11 15:22:41,953 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:42,162 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 211
+2026-01-11 15:22:42,166 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:42,451 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 213
+2026-01-11 15:22:42,457 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:42,703 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 213
+2026-01-11 15:22:42,710 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:43,253 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 215
+2026-01-11 15:22:43,259 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:43,477 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 211
+2026-01-11 15:22:43,484 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:43,742 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 211
+2026-01-11 15:22:43,748 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:44,004 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 213
+2026-01-11 15:22:44,010 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:44,297 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 213
+2026-01-11 15:22:44,304 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:44,542 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856811&n=1 HTTP/1.1" 200 211
+2026-01-11 15:22:44,549 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:22:45,497 DEBUG https://test.russkij100.ru:443 "DELETE /api3/testResult?id=1856811 HTTP/1.1" 200 None
+2026-01-11 15:22:45,501 DEBUG     Парсинг завершен! Текущее количество ответов: 25
+2026-01-11 15:25:36,830 DEBUG Запуск ЕГЭ №10, круг 1/100
+2026-01-11 15:25:36,833 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:37,120 DEBUG https://test.russkij100.ru:443 "GET /workout/10?size=10 HTTP/1.1" 200 None
+2026-01-11 15:25:37,226 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:37,431 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 211
+2026-01-11 15:25:37,434 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:37,658 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 211
+2026-01-11 15:25:37,663 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:37,875 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 215
+2026-01-11 15:25:37,880 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:38,377 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 211
+2026-01-11 15:25:38,382 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:38,616 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 213
+2026-01-11 15:25:38,620 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:38,849 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 215
+2026-01-11 15:25:38,854 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:39,064 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 215
+2026-01-11 15:25:39,068 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:39,289 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 211
+2026-01-11 15:25:39,294 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:39,508 DEBUG https://test.russkij100.ru:443 "POST /api2/addTestAnswer?id=1856829&n=1 HTTP/1.1" 200 213
+2026-01-11 15:25:39,512 DEBUG Starting new HTTPS connection (1): test.russkij100.ru:443
+2026-01-11 15:25:40,062 DEBUG https://test.russkij100.ru:443 "DELETE /api3/testResult?id=1856829 HTTP/1.1" 200 None
+2026-01-11 15:25:40,064 DEBUG     Парсинг завершен! Текущее количество ответов: 33

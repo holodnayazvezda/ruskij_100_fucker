@@ -1,18 +1,8 @@
 DANIIL_COOKIE = "russkij100_uid=AZuoYEypc8erQbMOYwPKzA.D4Q1QGV0Hws8-IOx0CqE0_HiFKkpoamaG39QnlXfEcI"
 
-ANSWERS_GETTER_COOKIE = [
-    "russkij100_uid=AZuqzITwdlqpSkyEtkyB-A.uSU2XXBDSuUpZGelBTGkoJFdntGBkkK_aUWEpn0VIuw",
-    "russkij100_uid=AZus3ofRdb61uRBxuuCkhQ.TgABiUjAsqy4J5mMCT12CNItCAWkeYKbi1SktN04VW0",
-    "russkij100_uid=AZus4C4BcHOdZUrLZZgp6Q.jb1H0vm8PLWfUkuZ4OdzrwXKbDrB1u8oaJ7WFi3UYD8",
-    "russkij100_uid=AZus4U_6cxC8jI_JmjKhlw.meIQR-DO5YAqgovWKNtVshSr_X7KEn7PRVDeH_QPgSA",
-    "russkij100_uid=AZus5PBWcvyMU89sEndsPg.wTUTIiP9FHhIFYV87kj0xjpVCaQUtYZT-8Jq0cICd-0"
-]
-amount_of_requests = 0
 
 
 def get_headers():
-    global amount_of_requests
-    amount_of_requests += 1
     HEADERS = {
         "Cache-Control": "no-cache",
         "Content-Type": "application/json",
@@ -21,7 +11,7 @@ def get_headers():
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
-        "Cookie": ANSWERS_GETTER_COOKIE[amount_of_requests % 3]
+        "Cookie": 'russkij100_uid=AZutBEM6f2SrQgsccNlnTQ.qa-GoAeKCOo-gtfkliQ0z_fjaoHpaySkj1hUM3Jzgys'
     }
     return HEADERS
 

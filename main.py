@@ -13,7 +13,7 @@ def solve_tets(ege_num: int):
     task_type = classify_task(ege_num)
     test_html = get_test_info(test_link_on_any_10, headers)
     test_id, answer_nums = parse_test_hrml(test_html)
-    get_answers_on_test(ege_num, task_type, test_id, answer_nums)
+    get_answers_on_test(ege_num, task_type, test_id, answer_nums, headers)
     # solve_test_using_stored_answers(test_id, answer_nums)
 
 if __name__ == "__main__":
