@@ -26,10 +26,11 @@ def solve_test_using_stored_answers(
         q_id = str(q_id)
         need_to_save_answer = False
         if q_id not in answers:
-            answer = "135"
+            answer = "ожидают"
             need_to_save_answer = True
         else:
             answer = answers[q_id]
+            answer = answer.replace('(', '').replace(')', '').split('|')[0]
         end_timestamp = start_timestamp + 200 * 1000
         if task_type == "point_ans_needed":
             requests_payload_text = get_json_payload_for_task_where_point_ans_needed(

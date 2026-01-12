@@ -1,5 +1,7 @@
 import time
 
+from random import randint
+
 from config import ege_test_url, get_headers, SOLVER, GETTER
 from core.test_solver import solve_test_using_stored_answers
 from core.utils import get_test_info, parse_test_hrml
@@ -17,7 +19,7 @@ def solve_tets(ege_num: int, launch_type = SOLVER):
     if launch_type == GETTER:
         get_answers_on_test(ege_num, task_type, test_id, answer_nums, headers)
     else:
-        solve_test_using_stored_answers(ege_num, task_type, test_id, answer_nums, headers, 20)
+        solve_test_using_stored_answers(ege_num, task_type, test_id, answer_nums, headers, 18)
 
 if __name__ == "__main__":
     TASK_NUMS_TO_SOLVE = {5: 1}
@@ -28,7 +30,7 @@ if __name__ == "__main__":
             solve_tets(ege_task_num, working_type)
             time.sleep(6)
         print_to_file(f'Завершено ЕГЭ №{ege_task_num} в количестве {amount_of_circles} кругов')
-        time.sleep(35)
+        time.sleep(randint(20, 40) * randint(1, 4))
     # AMOUNT_OF_CIRCLES = 70
     # for _ in range(AMOUNT_OF_CIRCLES):
     #     solve_tets(EGE_TASK_NUM)
