@@ -18,7 +18,6 @@ def parse_test_hrml(html: str) -> tuple[int, list[int]]:
     soup = BeautifulSoup(html, 'html.parser')
     scripts = soup.find_all('script')
     test_result_id = None
-
     for script in scripts:
         if script.string and 'TEST_RESULT_ID' in script.string:
             match = re.search(r'TEST_RESULT_ID\s*=\s*(\d+)', script.string)
@@ -26,7 +25,7 @@ def parse_test_hrml(html: str) -> tuple[int, list[int]]:
                 test_result_id = int(match.group(1))
                 break
 
-    if not test_result_id:
+    if test_result_id is None:
         raise Exception("Ошибка: TEST_RESULT_ID не найден в HTML.")
 
     questions = soup.find_all("div", attrs={"data-question-id": True})

@@ -53,7 +53,7 @@ def solve_test_using_stored_answers(
                 i, q_id,
                 answer
             )
-        if i == 10:
+        if i == 5:
             time_to_sleep = time_to_sleep_onq1_task * randint(7, 14)
             print(f'Создаем иммитацию честности, сплю {time_to_sleep}')
             time.sleep(time_to_sleep)

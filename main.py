@@ -1,4 +1,5 @@
 import time
+import json
 
 from random import randint
 
@@ -19,10 +20,10 @@ def solve_tets(ege_num: int, launch_type = SOLVER):
     if launch_type == GETTER:
         get_answers_on_test(ege_num, task_type, test_id, answer_nums, headers)
     else:
-        solve_test_using_stored_answers(ege_num, task_type, test_id, answer_nums, headers, 18)
+        solve_test_using_stored_answers(ege_num, task_type, test_id, answer_nums, headers, 1)
 
 if __name__ == "__main__":
-    TASK_NUMS_TO_SOLVE = {5: 1}
+    TASK_NUMS_TO_SOLVE = {4: 11, 5: 10}
     working_type = SOLVER
     for ege_task_num, amount_of_circles in TASK_NUMS_TO_SOLVE.items():
         for i in range(amount_of_circles):
@@ -30,11 +31,5 @@ if __name__ == "__main__":
             solve_tets(ege_task_num, working_type)
             time.sleep(6)
         print_to_file(f'Завершено ЕГЭ №{ege_task_num} в количестве {amount_of_circles} кругов')
-        time.sleep(randint(20, 40) * randint(1, 4))
-    # AMOUNT_OF_CIRCLES = 70
-    # for _ in range(AMOUNT_OF_CIRCLES):
-    #     solve_tets(EGE_TASK_NUM)
-    #     time.sleep(5)
-    # for i in range(40):
-    #     solve_tets()
-    #     time.sleep(5)
+        time.sleep(randint(20, 40) * randint(1, 3))
+    # solve_test_from_bajina('https://test.russkij100.ru/test/test1813')
